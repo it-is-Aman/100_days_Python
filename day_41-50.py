@@ -24,4 +24,19 @@
 
 
 
+## 43 - Virtual Environment
 
+'''A virtual environment is a tool used to isolate specific Python environments on a single machine,
+ allowing you to work on multiple projects with different dependencies and packages without conflicts
+ '''
+'''
+python --version    #check python version
+python -m venv myenv    # Create a virtual environment
+source myenv/bin/activate   # Activate the virtual environment (Linux/macOS)
+myenv\Scripts\activate.bat  # Activate the virtual environment (Windows)
+myenv\Scripts\activate.ps1   #in powershell
+deactivate  # Deactivate the virtual environment
+pip freeze > requirements.txt   # Output the list of installed packages and their versions to a file
+pip install -r requirements.txt   # Install the packages listed in the requirements.txt file
+
+'''
