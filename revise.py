@@ -90,3 +90,29 @@
 #     raise ValueError("naughty boy your sum is greater than 69")
 # else:
 #     print(sum)
+
+
+# str="aweSOMe BUddy , this is GOing to Big "
+
+# print(str.upper())
+# print(str.isupper())    
+# print(str.lower())
+# print(str.islower())    #True if all the characters in the string are lower case
+# print(str.swapcase())   #changes the character casing of the string. Upper case are converted to lower case and lower case to upper case
+# print(str.replace("BUddy","Man"))
+# print(str.endswith("this"))    
+# print(str.startswith("this"))    
+# print(str.capitalize()) #turns only the first character of the string to uppercase and the rest other characters of the string are turned to lowercase
+# print(str.title())  #capitalizes each letter of the word within the string.
+# print(str.istitle())    #True only if the first letter of each word of the string is capitalized,
+# print(str.count("this"))    #returns the number of times the given value has occurred
+# print(str.find("this")) #searches for the first occurrence of the given value    
+# print(str.index("this")) #searches for the first occurrence of the given value, raise an exception if not present    
+# print(str.strip())  #removes any white spaces before and after the string.
+# print(str.rstrip("!"))  #removes any trailing characters
+# print(str.split())   ##Splits the string at the whitespace " "
+# print(str.center(100,"."))  #string to the center as per the parameters given by the user, will print "." in every feild
+# print(str.isalnum())    #true only if the entire string only consists of A-Z, a-z, 0-9
+# print(str.isalpha())    #true only if the entire string only consists of A-Z, a-z
+# print(str.isprintable())    # True if all the values within the given string are printable,  if "\n" then return False
+# print(str.isspace()) 
