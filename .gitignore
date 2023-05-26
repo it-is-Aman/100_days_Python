@@ -1,2 +1,11 @@
-requirements.txt
-virtual_env/
+Folders ->
+
+/__pycache__
+/randomDir
+/virtual_env
+
+
+Txt files ->
+
+/checking_oswrite
+/requirements.txt
