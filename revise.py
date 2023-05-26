@@ -1,10 +1,5 @@
-## List Comprehension
-#name = [1,2,3,4,5,6]
-# nameList=[ i*10 for i in name if (i<5)]
-# print(nameList)
-
-## List methods
-# l=[1,2,3,4,5]
+##List
+l=[1,2,3,4,5]
 # m=l.copy()
 # print(m)
 # l.reverse()
