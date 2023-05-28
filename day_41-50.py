@@ -192,10 +192,53 @@ There are various modes in which we can open files.
 # fl.close()
 
 # with open("file_io.txt","r") as fl:     #'with' statement automatically close the file after you are done with it.
-#     print(fl.read())
+#     print(fl.read())  
 
 # with open("file_io.txt","w") as fl:
 #     fl.write("this is the modified statement\n")
 
 # with open("file_io.txt","a") as fl:
 #     fl.write("this is the append statement\n")
+
+
+## 50 readlines(), writelines() method
+'''
+The readline() method reads a single line from the file. If we want to read multiple lines, we can use a loop.
+The writelines() method in Python writes a sequence of strings to a file. The sequence can be any iterable object, such as a list or a tuple
+                writelines() method does not add newline characters between the strings in the sequence.
+'''
+# myFile=open("file_io.txt","r")
+# while True:
+#     fLine=myFile.readline()    #readlines() method reads all the lines of the file and returns them as a list of strings.
+#     print(fLine)
+#     if not fLine:      #if fLine empty then break
+#         break
+
+# myFile=open("file_io.txt","r")
+# while True:
+#     fLine=myFile.readline()  
+#     text=fLine.split(",",2)  #Split the string into a list with max 2 items
+#     text1=fLine.split(",")[0]   #split the fLine into list and assign 0 index value to text1 and another value after ',' to text2 and after ',' to text3
+#     text2=fLine.split(",")[1]
+#     text3=fLine.split(",")[2]
+#     print(fLine)
+#     print(f"{text}, {text1} and {text2} and {text3}")
+#     if not fLine:      
+#         break
+
+# myFile=open("file_io.txt","a")
+# text=["content 1","content 2","content 3"]
+# myFile.writelines(text)     #write the strings in the text list to the file file_io.txt.
+# myFile.close()
+
+# myFile=open("file_io.txt","a")
+# text=["content 1","content 2","content 3"]
+# for cont in text:       #use loop to write each string separately
+#     myFile.write(cont+"\n")
+# myFile.close()
+
+
+
+
+
+
