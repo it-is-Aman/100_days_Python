@@ -18,3 +18,24 @@ tell() - returns the current position within the file, in bytes.
 # with open("file_io.txt","r") as file:
 #     print(file.read())
 
+
+## 53 lambda function
+'''
+a lambda function is a small anonymous function without a name.
+lambda arguments: expression
+'''
+
+# def add(num1,num2):   # Function to add the input
+#     return num1+num2
+# print(add(2,3))
+
+# add = lambda num1,num2: num1+num2   # Lambda function to add the input
+# print(add(1,3))
+
+# def add_adt(fx , num):      #fx have anonymous function which do square of the number
+#     return num + fx(num)    # 5 + 5**2 = 5 + 25 = 30
+
+# print(add_adt(lambda num: num**2,5))    #we created anonymos function and pass to function
+
+
+## 54 
