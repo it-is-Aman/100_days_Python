@@ -38,4 +38,88 @@ lambda arguments: expression
 # print(add_adt(lambda num: num**2,5))    #we created anonymos function and pass to function
 
 
-## 54 
+## 54 Map, Filter and Reduce
+'''
+the map, filter, and reduce functions are built-in functions that allow you to apply a function to a sequence of elements and return a new sequence.
+These functions are known as higher-order functions, as they take other functions as arguments.
+map(function, iterable) - The map function applies a function to each element in a sequence and returns a new sequence containing the transformed elements.
+filter(predicate, iterable) - The filter function filters a sequence of elements based on a given predicate (a function that returns a boolean value) and returns a new sequence containing only the elements that meet the predicate.
+reduce(function, iterable) - The reduce function is a higher-order function that applies a function to a sequence and returns a single value. It is a part of the functools module in Python.
+'''
+
+# map
+# def square(num):
+#     return num**2
+# l=[1,2,3,4]      # List of numbers
+# print(l)
+# new_l=map(square,l)     #square each number using the map function
+# print(list(new_l))      # Print the doubled numbers
+
+# l=[1,2,3,4]      # List of numbers
+# print(l)
+# new_l=map(lambda num:num**2,l)     #The map function applies the lambda function to each element in the list
+# print(list(new_l))      # list containing the doubled numbers
+
+
+#filter
+# def even(num):
+#     return num%2==0
+# l=[1,2,3,4]      # List of numbers
+# print(l)
+# new_l=filter(even,l)     # Get only the even numbers using the filter function
+# print(list(new_l))      # Print the even numbers
+
+# l=[1,2,3,4]      # List of numbers
+# print(l)
+# new_l=filter(lambda num:num%2==0,l)     #The filter function applies the lambda function to each element in the list
+# print(list(new_l))      #new list containing only the even numbers
+
+
+#reduce
+# from functools import reduce
+
+# # def sum(num1,num2):
+# #     return num1+num2
+# # l=[1,2,3,4]      # List of numbers
+# # print(l)
+# # new_l=reduce(sum,l)     # Calculate the sum of the numbers using the reduce function
+# # print(new_l)      # Print sum       1+2,3,4 = 3+3,4 = 6+4 = 10  
+
+# l=[1,2,3,4]      # List of numbers
+# print(l)
+# new_l=reduce(lambda num1,num2:num1+num2,l)     #lambda function to the first two elements in the list (1 and 2), then applies the function to the result (3) and the next element (3), and so on.
+# print(new_l)      #the sum of all the elements in the list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
