@@ -92,8 +92,26 @@ reduce(function, iterable) - The reduce function is a higher-order function that
 
 
 
+## 55  'is' vs '==' in Python
+'''
+while the == operator compares the values of the objects. This means that is will only return True if the objects being compared are the exact same object in memory,
+while == will return True if the objects have the same value.
+'''
 
+# obj_a=3     #strings and integers are immutable means their value can't be changed so both result will be same
+# obj_b=3
+# print(obj_a is obj_b)
+# print(obj_a == obj_b)
 
+# obj_a=[1,2]     #list and dictionaries are mutable so is and == behave differently
+# obj_b=[1,2]
+# print(obj_a is obj_b)
+# print(obj_a == obj_b)
+
+# obj_a=(1,2)     #tuple are immutable means their value can't be changed so both result will be same
+# obj_b=(1,2)
+# print(obj_a is obj_b)
+# print(obj_a == obj_b)
 
 
 
