@@ -114,6 +114,68 @@ while == will return True if the objects have the same value.
 # print(obj_a == obj_b)
 
 
+## 56
+# Snake Water Gun Exercise
+
+'''
+computer          S W G
+                  0 1 2                 | column1 column2 column3
+user        S 0   D W L         row1 ->
+            W 1   L D W         row2 ->
+            G 2   W L D         row3 ->
+
+L=-1 D=0 W=1
+'''
+
+# import random
+# def genereate_input():      #Each time you call the generate_input function, it will return a random value of either 0, 1, or 2.
+#     return random.randint(0,2)
+
+# def check(mat,val1,val2):
+#     return mat[val1][val2]
+
+# inputComp=genereate_input()
+# inputUser=int(input("Enter 0-snake   1-water   2-gun:"))
+
+# matrix=[[0,1,-1],        #matrix[1][2]=-1   2nd row and 3rd element
+#         [-1,0,1],        #row=user, column=comp   
+#         [1,-1,0]]
+
+# result=check(matrix,inputUser,inputComp)
+# if result==1:
+#     print("|Won| \nyou choose:",inputUser,"computer choose:",inputComp)
+# if result==-1:
+#     print("|Lose| \nyou choose:",inputUser,"computer choose:",inputComp)
+# if result==0:
+#     print("|Draw| \nyou choose:",inputUser,"computer choose:",inputComp)
+
+
+# import random
+# def genereate_input():      #Each time you call the generate_input function, it will return a random value of either 0, 1, or 2.
+#     option=['S','W','G']
+#     return random.choices(option)
+
+# def check(mat,val1,val2):
+#     return mat[val1][val2]
+
+# inputComp=genereate_input()
+# inputUser=input("Enter S-snake   W-water   G-gun:")
+# valUser=0 if inputUser=='S' else 1 if inputUser=='W'   else 2 
+# valComp=0 if inputComp==['S'] else 1 if inputComp==['W']   else 2       #result is in terms of list so put in list format ['S'] when checking condition in "if" case 
+
+# matrix=[[0,1,-1],        #matrix[1][2]=-1   2nd row and 3rd element
+#         [-1,0,1],        #row=user, column=comp   
+#         [1,-1,0]]
+
+# result=check(matrix,valUser,valComp)
+# if result==1:
+#     print("|Won| \nyou choose:",inputUser,"computer choose:",inputComp)
+# if result==-1:
+#     print("|Lose| \nyou choose:",inputUser,"computer choose:",inputComp)
+# if result==0:
+#     print("|Draw| \nyou choose:",inputUser,"computer choose:",inputComp)
+
+
 
 
 
