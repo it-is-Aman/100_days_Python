@@ -19,7 +19,7 @@ tell() - returns the current position within the file, in bytes.
 #     print(file.read())
 
 
-## 53 lambda function
+## 52 lambda function
 '''
 a lambda function is a small anonymous function without a name.
 lambda arguments: expression
@@ -38,7 +38,7 @@ lambda arguments: expression
 # print(add_adt(lambda num: num**2,5))    #we created anonymos function and pass to function
 
 
-## 54 Map, Filter and Reduce
+## 53 Map, Filter and Reduce
 '''
 the map, filter, and reduce functions are built-in functions that allow you to apply a function to a sequence of elements and return a new sequence.
 These functions are known as higher-order functions, as they take other functions as arguments.
@@ -92,7 +92,7 @@ reduce(function, iterable) - The reduce function is a higher-order function that
 
 
 
-## 55  'is' vs '==' in Python
+## 54  'is' vs '==' in Python
 '''
 while the == operator compares the values of the objects. This means that is will only return True if the objects being compared are the exact same object in memory,
 while == will return True if the objects have the same value.
@@ -114,7 +114,7 @@ while == will return True if the objects have the same value.
 # print(obj_a == obj_b)
 
 
-## 56
+## 55
 # Snake Water Gun Exercise
 
 '''
@@ -176,6 +176,36 @@ L=-1 D=0 W=1
 #     print("|Draw| \nyou choose:",inputUser,"computer choose:",inputComp)
 
 
+## 56 Introduction to OOP
+'''
+OOP in Python allows developers to model real-world concepts and entities using classes and objects, 
+encapsulate data, reuse code through inheritance, and write more flexible code through polymorphism. 
+'''
+
+
+## 57
+#  Python Class and objects
+'''
+# A class is a blueprint or a template for creating objects, providing initial values for state 
+# (member variables or attributes), and implementations of behavior (member functions or methods).
+# '''
+# class UserDetails:
+#     name="None"
+#     roll=00
+
+#     def info(self):  #self means that object for which this method is called
+#         print(f"{self.name} is : {self.roll}")
+
+# #Object is the instance of the class used to access the properties of the class Now lets create an object of the class.
+# obj1=UserDetails()
+# obj2=UserDetails()
+
+# print(obj1.name)
+# obj1.info()     
+
+# obj2.name="cool"    #now name changed from default to "cool" in obj2
+# obj2.roll=77
+# obj2.info()     #info of obj2 will print and name,roll will be of obj2 because self method is called by object obj2
 
 
 
