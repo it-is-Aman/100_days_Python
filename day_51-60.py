@@ -208,10 +208,51 @@ encapsulate data, reuse code through inheritance, and write more flexible code t
 # obj2.info()     #info of obj2 will print and name,roll will be of obj2 because self method is called by object obj2
 
 
+## 58
+# Constructors
+'''
+A constructor is a special method in a class used to create and initialize an object of a class. There are different types of constructors. 
+Constructor is invoked automatically when an object of a class is created.
+syntax ->
+def __init__(self):
+	# initializations
+
+1. Parameterized Constructor -> When the constructor accepts arguments along with self,
+These arguments can be used inside the class to assign the values to the data member
+
+2. Default Constructor -> When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructo
+'''
+
+#Default Constructor
+# class student:
+#     def __init__(self):     #called automatically when an object is created of a class
+#         print("this is the constructor")
+
+#     name="None"
+#     mark="00"
+
+#     def details(self):
+#         print(f"{self.name} obtained {self.mark}")
+
+# a=student()
+# a.name="cool"
+# a.mark=23
+# a.details()
 
 
+#Parameterized Constructor
 
+# class student():
+#     def __init__(self, name,mark):  #self is must to have   
+#         self.stuName=name       #(keep in mind) the syntax, 'name' is like a local parameter but 'stuName' is class variable so, use stuName whenever use in class.
+#         self.stuMark=mark
 
+#     def details(self):
+#         print(f"{self.stuName} obtained {self.stuMark}")    #keep in mind syntax
+
+# #b=student("cool")    #give error because required arguments are missing
+# b = student("cool",77)    
+# b.details()
 
 
 
