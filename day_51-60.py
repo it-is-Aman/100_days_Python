@@ -256,11 +256,26 @@ These arguments can be used inside the class to assign the values to the data me
 
 
 
+## 59 Python Decorators
+'''
+Python decorators are a powerful and versatile tool that allow you to modify the behavior of functions and method
+python decorators are a way to extend the functionality of functions and methods, by modifying its behavior without modifying the source code
+'''
 
+# def greet(fx):  #take its own function, here 'fx' name could be any
+#     def mfx():      #modified function, here 'mfx' name could be any
+#         print("Welcome")    #print 1st message
+#         fx()        #print the content of that function
+#         print("End")        #print last message
+#     return mfx      #return our this fully modified function
 
+# @greet      
+# def hello():        #function will print with that greet funciton everytime whenever we call this function
+#     print("this is just a hello function")
 
+# hello()
 
-
+# # greet(hello)()      #shorthand use
 
 
 
