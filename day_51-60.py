@@ -4,7 +4,6 @@ the seek() and tell() functions are used to work with file objects and their pos
 seek() - allows you to move the current position within a file to a specific point.
 tell() - returns the current position within the file, in bytes. 
 '''
-
 # with open("file_io.txt","r") as file:
 #     file.seek(3)    # Move to the 3th byte in the file
 #     text = file.read(4)     # Read the next 4 byte
@@ -17,6 +16,7 @@ tell() - returns the current position within the file, in bytes.
 
 # with open("file_io.txt","r") as file:
 #     print(file.read())
+
 
 
 ## 52 lambda function
@@ -38,6 +38,7 @@ lambda arguments: expression
 # print(add_adt(lambda num: num**2,5))    #we created anonymos function and pass to function
 
 
+
 ## 53 Map, Filter and Reduce
 '''
 the map, filter, and reduce functions are built-in functions that allow you to apply a function to a sequence of elements and return a new sequence.
@@ -46,7 +47,6 @@ map(function, iterable) - The map function applies a function to each element in
 filter(predicate, iterable) - The filter function filters a sequence of elements based on a given predicate (a function that returns a boolean value) and returns a new sequence containing only the elements that meet the predicate.
 reduce(function, iterable) - The reduce function is a higher-order function that applies a function to a sequence and returns a single value. It is a part of the functools module in Python.
 '''
-
 # map
 # def square(num):
 #     return num**2
@@ -97,7 +97,6 @@ reduce(function, iterable) - The reduce function is a higher-order function that
 while the == operator compares the values of the objects. This means that is will only return True if the objects being compared are the exact same object in memory,
 while == will return True if the objects have the same value.
 '''
-
 # obj_a=3     #strings and integers are immutable means their value can't be changed so both result will be same
 # obj_b=3
 # print(obj_a is obj_b)
@@ -114,9 +113,9 @@ while == will return True if the objects have the same value.
 # print(obj_a == obj_b)
 
 
+
 ## 55
 # Snake Water Gun Exercise
-
 '''
 computer          S W G
                   0 1 2                 | column1 column2 column3
@@ -126,7 +125,7 @@ user        S 0   D W L         row1 ->
 
 L=-1 D=0 W=1
 '''
-
+# Method 1
 # import random
 # def genereate_input():      #Each time you call the generate_input function, it will return a random value of either 0, 1, or 2.
 #     return random.randint(0,2)
@@ -150,6 +149,7 @@ L=-1 D=0 W=1
 #     print("|Draw| \nyou choose:",inputUser,"computer choose:",inputComp)
 
 
+# Method 2
 # import random
 # def genereate_input():      #Each time you call the generate_input function, it will return a random value of either 0, 1, or 2.
 #     option=['S','W','G']
@@ -174,6 +174,7 @@ L=-1 D=0 W=1
 #     print("|Lose| \nyou choose:",inputUser,"computer choose:",inputComp)
 # if result==0:
 #     print("|Draw| \nyou choose:",inputUser,"computer choose:",inputComp)
+
 
 
 ## 56 Introduction to OOP
@@ -208,6 +209,7 @@ encapsulate data, reuse code through inheritance, and write more flexible code t
 # obj2.info()     #info of obj2 will print and name,roll will be of obj2 because self method is called by object obj2
 
 
+
 ## 58
 # Constructors
 '''
@@ -222,7 +224,6 @@ These arguments can be used inside the class to assign the values to the data me
 
 2. Default Constructor -> When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructo
 '''
-
 #Default Constructor
 # class student:
 #     def __init__(self):     #called automatically when an object is created of a class
