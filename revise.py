@@ -111,3 +111,25 @@ l=[1,2,3,4,5]
 # print(str.isalpha())    #true only if the entire string only consists of A-Z, a-z
 # print(str.isprintable())    # True if all the values within the given string are printable,  if "\n" then return False
 # print(str.isspace()) 
+
+
+# lst=[1,2,3]
+# print(lst)
+
+# tup=(1,4,6,2,4,0)
+# print(tup)
+# tup=list(tup)
+# tup.sort()
+# print(tup)
+
+# set={2,4,4,1,1,1,7,9}
+# print(set)
+# set.remove(4)
+# print(set)
+
+# dic={"fir":"lol",
+#      "wer":"ppp",
+#      "asd":"sam"}
+# print(dic.items())
+# print(dic.keys())
+# print(dic.values())
