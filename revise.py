@@ -133,3 +133,53 @@ l=[1,2,3,4,5]
 # print(dic.items())
 # print(dic.keys())
 # print(dic.values())
+
+##pattern using for loop
+# for i in range(1,5,1):
+#     for j in range(0,i,1):
+#         print("^",end="")
+#     print()
+
+##pattern using while loop
+# i=1
+# while (i<=5):
+#     j=1
+#     while(j<=i):
+#         print("#",end="")
+#         j=j+1
+#     print()
+#     i=i+1
+
+# i=1
+# while (i<=5):
+#     j=1
+#     s=5
+#     while(s>=i):    #for spaces
+#         print(end=" ")
+#         s=s-1
+#     while(j<=i):    #for print value
+#         print(j,end=" ")
+#         j=j+1 
+#     print()
+#     i=i+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
