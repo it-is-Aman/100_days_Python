@@ -164,11 +164,27 @@ l=[1,2,3,4,5]
 #     i=i+1
 
 
+# for i in range(1,5,1):
+#     print(i)
+#     if i==8:
+#         break
+# else:
+#     print("else condition") #print because if statement not true so program go to else
 
 
+# try:
+#     num=int(input("enter number"))
+#     print("square is",num*num)
+# except ValueError:
+#     print("ValueError")
+# finally:
+#     print("print irrespective of situation")
 
 
+# num=int(input("enter number greater than 18"))
 
+# if num<=18:
+#     raise ValueError("I said enter number greater than 18")
 
 
 
