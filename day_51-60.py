@@ -222,7 +222,7 @@ def __init__(self):
 1. Parameterized Constructor -> When the constructor accepts arguments along with self,
 These arguments can be used inside the class to assign the values to the data member
 
-2. Default Constructor -> When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructo
+2. Default Constructor -> When the constructor doesn't accept any arguments from the object and has only one argument, self, in the constructor
 '''
 #Default Constructor
 # class student:
@@ -280,13 +280,58 @@ python decorators are a way to extend the functionality of functions and methods
 
 
 
+## 60 Getters and Setters
+'''that's why we use getter,setter,deleter
+# print(fruit_obj.fruit_name)     #we are refering fruit_name as local variable even thought this is a getter variable
 
+Getters -> typically defined using the @property decorator,
+           getters do not take any parameters.
 
+Setters-> setters take self, value as parameters,
+          we need setter method which can be added by decorating method with @property_name.setter
+'''
 
+# method 1
 
+# class Fruit:    
+#     def __init__(self,name: str):       #this only take string
+#         self._name=name         #underscore syntax for creating private variable (_name)
 
+#     def get_name(self):     #here we get the name of our fruit
+#         print("getting name")
+#         return self._name
+        
+#     def set_name(self,new_name: str):       #here we set the new_name of our fruit into our private variable
+#         self._name=new_name
 
+# fruit_obj=Fruit("banana")
+# # print(fruit_obj._name)      #we can still access _name which should be private
+# fruit_obj.set_name("orange")        #we set the name from banana to orange
+# print(fruit_obj.get_name())     #we get orange instead of banana beacuse we were set that
 
+# method 2
 
+# class Fruit:
+#     def __init__(self,name: str):
+#         self._name=name
 
+#     @property       #what ever we write under this will gonna be consider as property and it acts as a getter
+#     def fruit_name(self):
+#         print(f"{self._name} was accessed")
+#         return self._name
+    
+#     @fruit_name.setter      #we use our property with setter,deleter and @property_name should be same as @property
+#     def fruit_name(self,value):     #setter should have self and value 
+#         print(f"{self._name} is now {value}")
+#         self._name=value        #we are setting our self._name "original class variable" to new value
 
+#     @fruit_name.deleter      
+#     def fruit_name(self):     
+#         print(f"{self._name} was delected")
+#         del self._name    #delete our self._name value
+
+    
+# fruit_obj=Fruit("banana")
+# print(fruit_obj.fruit_name)     #we are refering fruit_name as local variable even thought this is a getter variable
+# fruit_obj.fruit_name="orange"   #here we have triggered setter method 
+# del fruit_obj.fruit_name    #which will delete the attribute means "orange"
